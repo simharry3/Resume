@@ -20,6 +20,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\usepackage{ragged2e}
 
 \begin{document}
 
@@ -30,7 +31,7 @@
 \lastupdated % Print the Last Updated text at the top right
 
 \namesection{Clayton}{Rayment}{ % Your name
-\href{mailto:cw.rayment@gmail.com}{cw.rayment@gmail.com} | 970-402-3299 % Your contact information
+\href{mailto:cw.rayment@gmail.com}{cw.rayment@gmail.com} | 970-402-3299 | \url{https://github.com/simharry3} % Your contact information
 }
 
 %----------------------------------------------------------------------------------------
@@ -38,6 +39,30 @@
 %----------------------------------------------------------------------------------------
 
 \begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+
+\subsection{Programming}
+
+\location{Fluent:}
+C/C++ \textbullet{} Python \textbullet{} \LaTeX \textbullet{} Linux \\ 
+\location{Familiar:}
+IDL \textbullet{} MATLAB \textbullet{} Java \textbullet{} SQL\\
+JS \textbullet{} LUA \textbullet{} Assembly \\
+\location{Extensions:}
+OpenCL \textbullet{} CUDA \textbullet{} OpenMP \textbullet{} MPI AstroPy
+\vspace{5pt}\\
+
+\subsection{Software}
+\location{Astronomy}
+MaxIM DL \textbullet{} Deep Sky Stacker\\
+\location{CAD/CAM}
+SolidWorks \textbullet{} Autodesk Inventor\\
+\location{Misc}
+Microsoft Office Suite
 
 %------------------------------------------------
 % Education
@@ -89,24 +114,6 @@ Theoretical Mechanics\\
 Observational Astronomy\\
 Astrophysics
 
-%------------------------------------------------
-% Skills
-%------------------------------------------------
-
-\section{Skills}
-
-\subsection{Programming}
-
-\location{Fluent:}
-C/C++ \textbullet{} Python \textbullet{} \LaTeX\ \\ 
-\location{Familiar:}
-Java \textbullet{} SQL \textbullet{} JS \textbullet{} LUA \textbullet{} IDL \textbullet{} Assembly \\
-\location{Extensions:}
-OpenCL \textbullet{} CUDA \textbullet{} OpenMP \textbullet{} MPI
-\vspace{5pt}\\
-\subsection{Amateur Astronomy}
-Experience with several telescopes, tracking software, and imaging with DSLR, QSI 600, and SBIG 800 series CCDs. Used Python and IDL for astronomical data reduction, including quasar detection and asteroid tracking.
-\sectionspace % Some whitespace after the section
 
 %----------------------------------------------------------------------------------------
 
@@ -118,13 +125,27 @@ Experience with several telescopes, tracking software, and imaging with DSLR, QS
 %----------------------------------------------------------------------------------------
 %
 \begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
-
 %------------------------------------------------
 % Experience
 %------------------------------------------------
 
 \section{Experience}
 
+\runsubsection{MilkyWay@Home}
+\descript{| Researcher\\}
+\location{Aug 2014 – Present | Troy, NY}
+Work with Dr. Heidi Newberg on MilkyWay@Home, a distributed computing
+project with a user base of over 20,000 active users, simulating dwarf galaxy tidal
+stream formation. Research focused on parallelizing large-scale n-body calculations
+to run on GPU compute devices using OpenCL.
+\vspace{3pt}\\
+% --------------------------------------------
+\runsubsection{Hirsch Observatory}
+\descript{| Operator\\}
+\location{Jan 2016 – Present | Troy, NY}
+Operator/Keyholder of the Hirsch Observatory. General responsibilities include operation of the 16" telescope, several smaller telescopes, and Observatory dome during public observing. Special responsibilities include CCD operation, data collection and reduction, and training members on CCD and telescope operation.
+\vspace{3pt}\\
+% --------------------------------------------
 \runsubsection{Rensselaer Polytechnic Institute}
 \descript{| Graduate TA\\}
 \location{January 2017 – Present | Troy, NY}
@@ -132,44 +153,25 @@ Graduate Teaching Assistant for Stars, Galaxies, and the Cosmos, Intro to Astron
 preparation and execution (Grading, proctoring, leading recitation, running night labs).
 \vspace{3pt}\\
 %------------------------------------------------
-
 \runsubsection{AutoZone}
 \descript{| Shift Manager\\}
 \location{March 2016 - Aug 2016 | Troy, NY}
 \vspace{3pt}
-
 %------------------------------------------------
-
-
 \runsubsection{Aims Community College}
 \descript{| Robotics Instructor\\}
-
-\location{May 2013 - Aug 2014 | Longmont, CO}
+\location{Summer 2014, Summer 2015 | Longmont, CO}
 Taught elementary through middle school students robotics using the LEGO
 Mindstorms robotics platform. Used both NXT and EV3 kits, and facilitated a learning
 environment appropriate for the age group.
 \vspace{3pt}\\
-
+% ------------------------------------------------
 \runsubsection{Woodward Inc.}
 \descript{| Engineering Intern\\}
 \location{May 2013 - Aug 2013 | Fort Collins, CO}
 \vspace{3pt}
 %------------------------------------------------
 
-%------------------------------------------------
-% Research
-%------------------------------------------------
-
-\section{Research}
-
-\runsubsection{MilkyWay@Home}
-\descript{| Researcher\\}
-
-\location{Aug 2014 – Present | Troy, NY}
-Work with Dr. Heidi Newberg on MilkyWay@Home, a distributed computing
-project with a user base of over 20,000 active users, simulating dwarf galaxy tidal
-stream formation. Research focused on parallelizing large-scale n-body calculations
-to run on GPU compute devices using OpenCL.
 
 
 
@@ -178,12 +180,6 @@ to run on GPU compute devices using OpenCL.
 %------------------------------------------------
 
 \section{Extracurricular} 
-\runsubsection{Hirsch Observatory}
-\descript{| Operator\\}
-
-\location{Jan 2016 – Present | Troy, NY}
-Operator/Keyholder of the Hirsch Observatory. General responsibilities include operation of the 16" telescope, several smaller telescopes, and Observatory dome during public observing. Special responsibilities include CCD operation, data collection and reduction, and training members on CCD and telescope operation.
-\vspace{3pt}\\
 
 \runsubsection{Rensselaer Sports Car Association}
 \descript{| President\\}
@@ -209,9 +205,12 @@ planning and execution was also common.
 %------------------------------------------------
 
 \section{Projects}
+\runsubsection{Amateur Astronomy}
+Experience with several telescopes, tracking software, and imaging with DSLR, QSI 600, and SBIG 800 series CCDs. Used Python and IDL for astronomical data reduction, including quasar detection and asteroid tracking.\vspace{5pt}\\
 \runsubsection{Competitive Robotics}~\\
 \descript{VRC Team Captain} Captain of VRC team from 2008-2011. Qualified for, and attended World Championships during all three seasons. Recieved Build Award at World Championships for the 2011 season.\\
 \descript{AVC Team Captain}Captain of team competing in SparkFun’s Autonomous Vehicle Challenge. Constructed 1/10 scale RC buggy capable of autonomous navigation using GPS, Compass, and tactile feedback.\vspace{5pt}\\
+
 % \runsubsection{Automotive}~\\
 % \descript{Race Engineering} Weight reduction, installation of safety equipment, including harnesses, roll bar, bucket seats, and fire mitigation. Multiple powertrain iterations completed, including individual throttle bodies, complete engine rebuild, and addition of forced induction. Fabrication of components including welding. Construction, programming, and installation of ECU, followed by tune optimization for peak performance and reliability.
 %----------------------------------------------------------------------------------------
