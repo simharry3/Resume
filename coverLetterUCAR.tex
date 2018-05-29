@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\usepackage{charter} % Use the Charter font for the document text
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{6in}{~\vspace{30pt}\\
+\minipage{0.7\linewidth}
+    \includegraphics[width=1\linewidth]{rpiLogo.jpg}
+\endminipage\hfill
+\minipage{0.1\linewidth}
+\endminipage\hfill
+\minipage{0.2\linewidth}
+    \includegraphics[width=.65\linewidth]{mwah.png}
+\endminipage\hfill}}
+% \includegraphics[width=1.2\linewidth]{mwah.png}}} 
+%Company/institution logo at the top left of the page
+\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=-30pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrPhone{Phone} % Customize the "Telephone" text
+\PhrEmail{Email} % Customize the "E-mail" text
+
+\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{Clayton Rayment\\
+            B.S. Applied Physics '16\\
+            M.S. Computer Science May '18} % Name
+
+\addrfrom{
+\today\\[12pt] % Date
+PO Box 1877 \\ % Address
+Berthoud, CO 80513
+}
+
+\phonefrom{970-402-3299} % Phone number
+
+\emailfrom{cw.rayment@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+\greetto{To Whom It May Concern,} % Greeting text
+% \closeline{Sincerely yours,} % Closing text
+
+% \nameto{Mrs. Jane Smith} % Addressee of the letter above the to address
+
+\addrto{
+Human Resources \\ % To address
+University Corporation for Atmospheric Research \\
+PO Box 3000\\
+Boulder, CO 80307\\
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+I am writing to you to apply for the Software Engineer I position (Job Number: 18137), which I found through the UCAR Careers webpage. 
+
+My name is Clayton Rayment, I am a recent Master's graduate from Rensselaer Polytechnic Institute. I received my Master's in Computer Science, with a Bachelor's in Applied Physics from the same institute, concentrating in Computational Astrophysics. This job listing attracted my attention as I am the lead developer on the GPU n-body program for the MilkyWay@Home project. We are a 20,000 user distributed computing project using the BOINC network to study dwarf galaxy tidal disruption in the Milky Way potential. I personally am responsible for acceleration of existing CPU intensive n-body simulation code using consumer-grade graphics processors with OpenCL. As part of my graduation requirements, I wrote my thesis on treecode GPU n-body computing. I have a strong passion for large scale projects that I can immerse myself in, learning new things both in and beyond the workplace. I see this opening as a great opportunity for me to broaden my research experience, and follow my interest in scientific computing and simulation. My background in both Physics and Computer Science, as well as my experience working in a computational research environment will make me a valuable asset to your team.
+
+I would love to schedule a phone interview some time to learn more about your project, and for you to get a better idea of what I can offer as a member of your research group. I am free most Tuesdays and Fridays. I look forward to hearing from you.
+
+Sincerely Yours,\vspace{15pt}\\
+\includegraphics[width=.45\linewidth]{signature.png}\vspace{-20pt}\\
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+
+\end{document}
